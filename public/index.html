@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deal Lab</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid #f3f4f6;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+    }
+    .header-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9ca3af;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 520px;
+    }
+    .intro h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    .intro p {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    .phases {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 520px;
+    }
+    .phase-card {
+      display: block;
+      text-decoration: none;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px 24px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      cursor: pointer;
+    }
+    .phase-card:hover {
+      border-color: #111827;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .phase-number {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+    .phase-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+    .phase-desc {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="header-label">Deal Lab</span>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Angel Investment Simulation</h1>
+      <p>Work through an early-stage angel investment deal from the perspective of a junior associate at a Silicon Valley law firm.</p>
+    </div>
+    <div class="phases">
+      <a class="phase-card" href="/phase1.html">
+        <div class="phase-number">Phase 1</div>
+        <div class="phase-title">AI Coach</div>
+        <div class="phase-desc">Ask questions, work through the deal mechanics, and prepare for your client meeting and negotiation.</div>
+      </a>
+      <a class="phase-card" href="/phase2.html">
+        <div class="phase-number">Phase 2</div>
+        <div class="phase-title">Founder Interview</div>
+        <div class="phase-desc">Meet with John Fleming to understand his priorities so you can draft a counter-proposal to Angel's term sheet.</div>
+      </a>
+      <a class="phase-card" href="/phase3.html">
+        <div class="phase-number">Phase 3</div>
+        <div class="phase-title">Negotiation</div>
+        <div class="phase-desc">Present your counter-proposal to Bethany Angel and negotiate the final terms of the deal.</div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
