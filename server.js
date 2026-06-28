@@ -337,6 +337,7 @@ function makeHandler(systemPrompt) {
         }),
       });
       const data = await response.json();
+      console.log(`[Phase] Cache stats:`, JSON.stringify(data.usage));
       if (data.error) return res.status(response.status).json({ error: data.error.message });
       res.json(data);
     } catch (err) {
